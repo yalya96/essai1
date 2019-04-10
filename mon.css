@@ -1,0 +1,160 @@
+/*Il est 23h56mn à l'heure ou je vous ecirs ce commentaire dans mon CSS. 
+C'est pour vous dire que je n'est pas encore terminer avec mon code css une fois fini je modifierais celle ci
+mais dans le souci de respecter vos dire qui de l'envoyer avant 00h je vous envoi ce bout de code inachever
+je ferais le modification dans quelques heures car j'y travail toujours.*/
+
+.all/*Bordure central*/
+{
+    text-align: center;   
+    border-style: solid;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+img /* redimenssionement de l'image*/
+{
+    float: left;
+    height: 40px;
+    width: 40px;
+    text-align: left;
+}
+.bordure1 /*mise en page de la première bordue qui doit conteir l'image*/
+{
+    height: 50px;
+    border: solid;
+}
+.cacher
+{
+    display: none;
+}
+ul
+{
+    list-style-type: none;/*efface les points des ul*/
+    margin: 0;/*reduire la marge*/
+    padding: 0;/*leger decalage*/
+}
+li
+{
+    display: inline-block;/*ecriture horizontal*/
+    text-align: center;
+    border-left: 1px solid black;
+
+}
+.bordure2
+{
+    text-align: left;
+}
+nav a
+{
+    display: inline-block;  /*effacement des tiret qu'il ya sur les nom des page*/
+    text-decoration: none;
+}
+nav
+{
+    width: 100%; /*on etire l'ecriture des element de la balise nav à 100% et on leur donne une couleur de fond*/
+    background-color: #424558;
+}
+nav>ul>li
+{
+position: relative;
+}
+nav>ul::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+nav li:hover .cacher /*apparition du sous menu*/
+{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+nav>ul>li>a
+{
+    padding: 20px 30px;
+    color: #FFF;
+}
+.cacher li
+{
+    border-bottom: 1px solid green;
+}
+.cacher li a
+{
+padding: 15px 10px;
+font-size: 13px;
+color: rgb(107,40,200);
+width: 80px;    
+}
+.p1  .cacher
+{
+background-color: rgb(150,100,63)
+}
+.p2  .cacher
+{
+background-color: rgb(172, 147, 64)
+}
+.p3  .cacher
+{
+background-color: rgb(100,200,150)
+}
+.p4  .cacher
+{
+background-color: rgb(200,155,10)
+}
+.cacher li:hover a
+{
+color: rgb(140,100,100);
+font-weight: bold;
+}
+.p1 .cacher li:hover 
+{
+background-color: rgb(60,160,200)
+}
+.p2 .cacher li:hover 
+{
+background-color: rgb(111,111,111)
+}
+.p3 .cacher li:hover 
+{
+background-color: rgb(85,3,9)
+}
+.p4 .cacher li:hover 
+{
+background-color: rgb(2,100,15)
+}
+.centre
+{
+    border: 1px solid blue;
+    margin: 0px;
+    height: 300px;
+    padding: 0px;
+    margin-top: 0px;
+    background: yellow;
+    }
+}
+.cg
+{
+    border: 1px solid blue;
+    margin-left: 42px;
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+    margin-top: 0px;
+    background: red;
+    }
+}
+.cg1
+{
+
+}
+.cg2
+{
+
+}
+.cd
+{
+
+}
