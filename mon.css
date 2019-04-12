@@ -1,61 +1,57 @@
-/*Il est 23h56mn à l'heure ou je vous ecirs ce commentaire dans mon CSS. 
-C'est pour vous dire que je n'est pas encore terminer avec mon code css une fois fini je modifierais celle ci
-mais dans le souci de respecter vos dire qui de l'envoyer avant 00h je vous envoi ce bout de code inachever
-je ferais le modification dans quelques heures car j'y travail toujours.*/
-
-.all/*Bordure central*/
+body
+{
+margin: 0;
+padding: 0;
+}
+.bordure1
 {
     text-align: center;   
     border-style: solid;
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: 300px;
+    margin-right: 300px
 }
-img /* redimenssionement de l'image*/
+img
 {
     float: left;
     height: 40px;
     width: 40px;
     text-align: left;
 }
-.bordure1 /*mise en page de la première bordue qui doit conteir l'image*/
+.bordure2
 {
+    border-style: solid;
     height: 50px;
-    border: solid;
+    width: auto;
+}
+.bordure3
+{
+    border-style: solid;
+    height: 75px;
+    width: auto;
+}
+nav ul
+{
+    list-style-type: none;
 }
 .cacher
 {
     display: none;
 }
-ul
-{
-    list-style-type: none;/*efface les points des ul*/
-    margin: 0;/*reduire la marge*/
-    padding: 0;/*leger decalage*/
-}
 li
 {
     display: inline-block;/*ecriture horizontal*/
     text-align: center;
-    border-left: 1px solid black;
-
-}
-.bordure2
-{
-    text-align: left;
-}
-nav a
-{
-    display: inline-block;  /*effacement des tiret qu'il ya sur les nom des page*/
-    text-decoration: none;
+    border-left: 1px solid black;/*creation des trait separateur du menu*/
 }
 nav
 {
-    width: 100%; /*on etire l'ecriture des element de la balise nav à 100% et on leur donne une couleur de fond*/
-    background-color: #424558;
+    width: 100%;
+    background-color:red;
 }
-nav>ul>li
+nav>ul
 {
-position: relative;
+margin: 0;
+padding: 0;
 }
 nav>ul::after
 {
@@ -63,34 +59,44 @@ nav>ul::after
     display: block;
     clear: both;
 }
-nav li:hover .cacher /*apparition du sous menu*/
+nav>ul>li
+{
+    float: left;
+    position: relative;
+}
+nav a
+{
+    display: inline-block;
+    text-decoration: none;
+}
+nav>ul>li>a
+{
+    padding: 20px 30px;
+    color: rgb(140,30,150);
+}
+nav li:hover .cacher
 {
     display: inline-block;
     position: absolute;
     top: 100%;
     left: 0px;
     padding: 0px;
-    z-index: 1000;
-}
-nav>ul>li>a
-{
-    padding: 20px 30px;
-    color: #FFF;
+    z-index: 100000;
 }
 .cacher li
 {
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid rgb(87, 11, 70);
 }
 .cacher li a
 {
-padding: 15px 10px;
-font-size: 13px;
-color: rgb(107,40,200);
-width: 80px;    
+padding: 5px 3px;
+font-size: 15px;
+color: yellow;
+width: 70px;    
 }
 .p1  .cacher
 {
-background-color: rgb(150,100,63)
+background-color: rgb(15,100,63)
 }
 .p2  .cacher
 {
@@ -98,7 +104,7 @@ background-color: rgb(172, 147, 64)
 }
 .p3  .cacher
 {
-background-color: rgb(100,200,150)
+background-color: rgb(100,20,150)
 }
 .p4  .cacher
 {
@@ -125,36 +131,77 @@ background-color: rgb(85,3,9)
 {
 background-color: rgb(2,100,15)
 }
+.bordure4
+{
+    border-style: solid;
+    height: 300px;
+    width: auto;
+}
 .centre
 {
-    border: 1px solid blue;
+    text-align: left;
+    border-style: solid;
+    height: 295px;
+    width: 400px;
+    background-color: red;
+    margin-top: auto;
+}
+.c1
+{
+    height: 150px;
+    width: 400px;
+    background-color: rgb(42, 94, 172);
+}
+.c2
+{
+    height: 150px;
+    width: 400px;
+    background-color: blueviolet;
+}
+.c3
+{
+    text-align: left;
+    border-style: solid;
+    height: 295px;
+    width: 285px;
+    background-color: rgb(165, 14, 14);
+    margin-left: 400px;
+    margin-top: -305px;
+    margin-bottom: 200px;
+}
+
+.bordure5
+{
+    border-style: solid;
+    height: 75px;
+    width: auto;
     margin: 0px;
-    height: 300px;
-    padding: 0px;
+}
+.fn1
+{
+    float: left;
+    display: block;
+    height: 75px;
+    width: 250px;
     margin-top: 0px;
-    background: yellow;
-    }
+    background-color: rgb(44, 212, 212);
 }
-.cg
+.fn2
 {
-    border: 1px solid blue;
-    margin-left: 42px;
-    width: 100px;
-    height: 100px;
-    padding: 0px;
+    text-align: left;
+    float: left;
+    display: block;
+    height: 75px;
+    width: 193px;
     margin-top: 0px;
-    background: red;
-    }
+    background-color: rgb(207, 135, 27);
 }
-.cg1
+.fn3
 {
-
-}
-.cg2
-{
-
-}
-.cd
-{
-
+    display: block;
+    height: 75px;
+    width: 245px;
+    background-color: rgb(133, 185, 11);
+    margin-top: -16px;
+    margin-left: 445px;
 }
